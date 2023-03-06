@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+    inteiro valor
+
+    escreva("Informe valor que gostaria de ver a tabuada?: \n")
+    leia(valor)
+
+    escreva(valor, " x 01 =", 1*valor, "\n")
+    escreva(valor, " x 02 =", 2*valor, "\n")
+    escreva(valor, " x 03 =", 3*valor, "\n")
+    escreva(valor, " x 04 =", 4*valor, "\n")
+    escreva(valor, " x 05 =", 5*valor, "\n")
+    escreva(valor, " x 06 =", 6*valor, "\n")
+    escreva(valor, " x 07 =", 7*valor, "\n")
+    escreva(valor, " x 08 =", 8*valor, "\n")
+    escreva(valor, " x 09 =", 9*valor, "\n")
+    escreva(valor, " x 10 =", 10*valor, "\n")
+  
+  }
+}
