@@ -2,7 +2,7 @@ programa {
 
   inclua biblioteca Util
 
-     inteiro idade[8], quant = 0, n
+     inteiro idade[8], quant = 0, n, opcao
      cadeia nome_cliente[8]
 
   funcao inicio() 
@@ -22,10 +22,10 @@ programa {
 
      escolha(opcao)
      {
-        caso "1":
+        caso 1:
        {
           limpa()
-          escreva("Qual o nome do cliente ", nome_cliente, ":")
+          escreva("Qual o nome do cliente: ")
           leia(nome_cliente[quant])
          
           limpa()
@@ -44,25 +44,25 @@ programa {
         pare
       }
 
-      caso "2":
+      caso 2:
       {
       limpa()
       escreva(".******************************************.\n")
       escreva("|            CLIENTES  CADASTRO           |\n")
       escreva(".******************************************.\n")  
 
-      para(n = 0; n < quant; n ++)
+      para(n = 0; n < quant; n++)
       {
-        escreva("N°:", n, " - ", nome_completo[n], "- idade: ", idade[n], "\n")
+        escreva("N°:", n+1, " - ", nome_cliente[n], "- idade: ", idade[n], "\n")
       }
 
       escreva("********************************************\n\n")
-      Util.aguarde(5000) //aguarde 05 segundos
+      Util.aguarde(3000) //aguarde 05 segundos
       inicio()
      
       }
 
-      caso "3"
+      caso 3
       {
       limpa()
       escreva("saindo do sistema em 05 segundos . . .")
@@ -93,3 +93,4 @@ programa {
     }
    
   }
+}
